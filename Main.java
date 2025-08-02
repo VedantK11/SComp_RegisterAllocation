@@ -21,8 +21,7 @@ public class Main {
          HashMap<Node, Set<String>> resultMap = ra.getResultMap();
          // root.accept(new ResultPrinter(resultMap));
 
-         // Assignment Starts here
-         // You can write your own custom visitor(s)
+         // Custom visitor(s)
          root.accept(new GJDepthFirst_v1<>(resultMap), null);
          root.accept(new GJDepthFirst_v2<>(), null);
       }
